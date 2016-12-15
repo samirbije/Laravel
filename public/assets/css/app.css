@@ -1,0 +1,86 @@
+.grid-column-center {
+    text-align: center;
+}
+
+
+
+.ocrm-button-div {
+    width:100%;
+    margin:auto;
+    text-align:center;
+}
+
+
+.form_fields_area {
+    padding: 5px;
+}
+
+.form_fields_area table{
+    width: 100%;
+    font-size:13px;
+}
+
+.form_fields_area td:nth-child(odd){
+    padding:4px;
+    width: 20%;
+    font-weight: bold;
+}
+
+.form_fields_area td:nth-child(even){
+    padding:4px;
+    width: 30%;
+}
+
+.form_fields_area ul{
+    list-style-type:none;
+    margin:0;
+    padding:5px;
+}
+.form_fields_area ul li{
+    width:25%;
+    float:left;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+.text_area {
+    padding: 5px!important;
+    width:547px!important;
+}
+
+.text_input {
+    width:200px;
+    padding: 0px 0px 0px 5px !important;
+}
+
+.mandatory { color:#ff0000; margin-left:2px;}
+
+
+#footer {
+    width: 100%;
+    padding: 5px 5px 5px 0px;
+    text-align: right;
+    font-size: 12px;
+    color: #FFF;
+    background-color: #357ca5;
+    position: fixed;
+    bottom: 0;
+    right: 0
+}
+.icon_tick { padding: 1px 0 1px 25px; background: url(../icons/tick.png) no-repeat 0px 50%;}
+.icon_cross { padding: 1px 0 1px 25px; background: url(../icons/cross.png) no-repeat 0px 50%;}
+
+div.advanced_view_tree {
+    height: 400px;
+    overflow: auto;
+}
+
+div.scrollable_tree {
+    height: 400px;
+    overflow: auto;
+    float: left;
+}
+
+#access_resources span { cursor: pointer; display: block; }
+
+#access_resources span:hover { font-weight: bold; }

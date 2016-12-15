@@ -1,0 +1,10 @@
+<div id="left">
+	<div class="subnav">
+		<div class="subnav-title">
+			<a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Control Panel</span></a>
+		</div>
+		<div class="subnav-title">
+			<a target="_blank" href="{{ Request::root() }}" class='toggle-subnav'><i class="icon-angle-down"></i><span>Home</span></a>
+		</div>		
+	</div>
+</div>

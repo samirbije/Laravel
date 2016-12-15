@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+ <?php echo $__env->make('admin.includes.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<body>	
+	 <?php echo $__env->make('admin.includes.navigation', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+		<div class="container-fluid" id="content">
+			 <?php echo $__env->make('admin.includes.left-container', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+			<div id="main">
+				
+				<!-- success message starts -->
+						<?php if(Session::has('success_message')): ?>
+							<div class="alert alert-success" style="padding-top:5px;"><?php echo Session::get('success_message'); ?></div>
+						<?php endif; ?>					
+				<!-- success message ends -->	
+				
+				<!-- error message starts -->
+						<?php if(Session::has('error_message')): ?>
+							<div class="alert alert-error" style="padding-top:5px;"><?php echo Session::get('error_message'); ?></div>
+						<?php endif; ?>					
+				<!-- error message ends -->						
+				
+				<!-- Validation error starts -->
+					<?php if(count($errors->all())>0): ?>
+						<div class="alert alert-error">  
+						<a class="close" data-dismiss="alert">X</a>  
+						<?php echo implode("<br />",$errors->all()); ?>
+
+						</div>  
+					<?php endif; ?>					
+				<!-- validation error ends -->
+				 <?php echo $content; ?>
+
+			</div>
+		</div>	
+			<!-- jQuery -->
+<script type="text/javascript" src="/assets/js/adminlte/js/jquery.ui-1.11.0.min.js"></script>
+<script type="text/javascript" src="/assets/js/adminlte/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/adminlte/js/AdminLTE/adminlte.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.treeview.js"></script>
+<script>
+$(window).load(function() {
+    $('.content').append('<div id="footer" class="bg-green">eRCS © 2016 All Rights Reserved.</div>');
+    /*if ($(window).height() > $('.content').height()) {
+        $('#footer').css({position: 'fixed', bottom: 0, right:0});
+    }*/
+});
+</script>
+	</body>
+</html>
+
